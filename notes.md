@@ -133,3 +133,21 @@ Preciso também importar a função hash, responsável por fazer a criptografia:
 - é uma biblioteca que trabalha com requisições http, para consumir requisições como post, get, delete, etc...
 
 * npm install axios
+
+
+# Dotenv - Biblioteca que lida com dados sensíveis
+
+https://www.npmjs.com/package/dotenv
+
+npm install dotenv --save
+
+https://www.md5hashgenerator.com/ - gera um hash - tornando a chave mais segura.
+
+# PM2 
+
+PM2 é um gerenciador de processos que irá ajudar a gerenciar e manter a aplicação (no caso o back-End) online 24h por dia.
+
+https://pm2.keymetrics.io/
+https://pm2.keymetrics.io/docs/usage/use-pm2-with-cloud-providers/
+
+npx pm2 init   

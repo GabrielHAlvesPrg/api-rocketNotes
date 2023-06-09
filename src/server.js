@@ -3,6 +3,7 @@
   o que o usuário esta pedindo, então baseado na rota a requisição vai ser entregue a um determinado controller.
 */
 require("express-async-errors");
+require("dotenv/config");
 
 const migrationsRun = require("./database/sqlite/migrations");
 
@@ -40,5 +41,5 @@ app.use(( error, request, response, next) => {
   });
 })
 
-const PORT = 3333 // Constante que define o endereço, o número da porta que a api vai ficar esperando requisições e devolvendo respostas.
+const PORT = process.env.PORT || 3333; // Constante que define o endereço, o número da porta que a api vai ficar esperando requisições e devolvendo respostas.
 app.listen(PORT, () => {console.log(`Server is running on Port ${PORT}`)});
