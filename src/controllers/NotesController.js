@@ -10,11 +10,13 @@ class NotesController{
     const  user_id  = request.user.id;
 
 
-    const note_id = await knex("notes").insert({
+    const [note_id] = await knex("notes").insert({
       title,
       description,
       user_id
     })
+
+   
 
     const linksInsert = links.map(link => {
       return {
