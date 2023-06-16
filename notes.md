@@ -151,3 +151,16 @@ https://pm2.keymetrics.io/
 https://pm2.keymetrics.io/docs/usage/use-pm2-with-cloud-providers/
 
 npx pm2 init   
+
+
+---------------------------------------------------------------------------
+
+# Testes automatizados 
+
+https://jestjs.io/pt-BR/ - Jest é um poderoso Framework de Testes em JavaScript com um foco na simplicidade.
+
+npm install --save-dev jest
+
+npx jest --init  Gera o arquivo de configuração.
+
+![Alt text](image.png)
